@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="shortcut icon" type="image/gif" href="icono.gif">
+    <!--link rel="shortcut icon" type="image/png" href="icono.png"-->
+    <link href="css/main.css"rel="stylesheet" type="text/css">
+    <title>Parejas Arcade</title>
+    <link rel="stylesheet" type="text/css" href="resources/introjs/introjs.css">
+    <script src="resources/introjs/intro.js"></script>
+
+</head>
+<body>
+   
+    <div id="container">
+            <h1 class="parpadea" id="titulo"> Parejas Arcade</h1>
+            <div id="form">
+                    <label>Seleccione una dificultad:</label>
+                    <div  id="seleccionDificultad" class="form-item">
+                    <ul>
+                        <input id="easy"type="radio" name="dificultad" value="4" checked>Fácil(4x4)<br>
+                        <input id="half"type="radio" name="dificultad" value="6">Medio(6x6)<br>
+                        <input id="hard" type="radio" name="dificultad" value="8">Difícil(8x8)
+                    </ul>
+                    </div>
+                    <div class="form-item">
+                    <input id="jugarBoton" type="submit" class="boton" value="jugar" onclick="jugar()">
+                    <input type="submit" class="boton" value="ayuda" onclick="startIntro()">
+                    </div>
+            </div>
+            <label id="marcador"></label>
+            <label id="tiempo"></label>
+            <div id="grid" class="wrapper">
+
+            </div>
+    </div>
+
+
+    <script src="js/main.js"></script>
+</body>
+</html>
